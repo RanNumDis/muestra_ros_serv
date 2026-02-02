@@ -1208,8 +1208,8 @@
     <header>
         <div class="container header-container">
             <div class="logo">
-                <img src="isotipo_RS.png" alt="Logo de la empresa" class="logo-image">
-                <img src="logotipo_RS.png" alt="Nombre de la empresa" class="logo-name-image">
+                <img src="isotipo_RS.png" alt="Logo de Rosario Servicios - Gas, plomería y aire acondicionado" class="logo-image" itemprop="logo">
+                <img src="logotipo_RS.png" alt="Rosario Servicios - Gas, plomería y aire acondicionado" class="logo-name-image">
             </div>
             
             <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú de navegación">
@@ -1220,16 +1220,18 @@
                 <ul class="nav-links" id="navLinks">
                     <li><a href="#inicio">Inicio</a></li>
                     <li><a href="#servicios">Servicios</a></li>
-                    <li><a href="#nosotros">Nosotros</a></li>
                     <li><a href="#reseñas">Reseñas</a></li>
                     <li><a href="#ubicacion">Zona y contacto</a></li>
                 </ul>
             </nav>
         </div>
+		<meta itemprop="name" content="Rosario Servicios">
+        <meta itemprop="telephone" content="+5493413133400">
+        <meta itemprop="address" content="Rosario, Santa Fe, Argentina">
     </header>
 
     <!-- BOTÓN DE EMERGENCIA -->
-    <a href="#emergencyModal" class="btn btn-emergency emergency-button" id="emergencyBtn">
+    <a href="#emergencyModal" class="btn btn-emergency emergency-button" id="emergencyBtn" aria-label="Plomero Gasista matriculado de emergencia en Rosario">
         <i class="fas fa-phone-alt"></i> URGENCIAS
     </a>
 
@@ -1239,7 +1241,7 @@
             <h1>ROSARIO SERVICIOS</h1>
             <h2>Juan Pablo del Río, gasista matriculado.</h2>
             <p>Instalaciones, reparaciones y habilitaciones de gas y agua en la ciudad de Rosario y alrededores.</p>
-            <a href="https://wa.me/5493413133400" class="btn btn-whatsapp" target="_blank">
+            <a href="https://wa.me/5493413133400" class="btn btn-whatsapp" target="_blank" aria-label="Contactar a Rosario Servicios por WhatsApp">
             <i class="fab fa-whatsapp"></i> Contactar por WhatsApp
             </a>
         </div>
@@ -1254,46 +1256,50 @@
             </div>
             
             <div class="services-grid">                
-                <div class="service-card">
+				<div class="service-card" itemscope itemtype="https://schema.org/Service">
                     <div class="service-icon">
                         <i class="fas fa-fire-flame-curved"></i>
                     </div>
-                    <h3>Instalaciones de gas</h3>
-                    <p>Instalaciones completas desde cero. Habilitaciones, adecuaciones y rehabilitaciones. Pruebas de hermeticidad, pedidos de conexión y trámites en Litoral Gas</p>
+                    <h3 itemprop="name">Instalaciones de gas</h3>
+                    <p itemprop="description">Instalaciones completas desde cero. Habilitaciones, adecuaciones y rehabilitaciones. Pruebas de hermeticidad, pedidos de conexión y trámites en Litoral Gas.</p>
+                    <meta itemprop="serviceType" content="Instalaciones de gas">
                 </div>
-                
-                <div class="service-card">
+				
+				<div class="service-card" itemscope itemtype="https://schema.org/Service">
                     <div class="service-icon">
                         <i class="fas fa-screwdriver-wrench"></i>
                     </div>
-                    <h3>Instalación y reparación de artefactos</h3>
-                    <p>Instalación y reparación de cocinas, termotanques, calefones, calefactores infrarrojos y de tiro balanceado.</p>
+                    <h3 itemprop="name">Instalación y reparación de artefactos</h3>
+                    <p itemprop="description">Instalación y reparación de cocinas, termotanques, calefones, calefactores infrarrojos y de tiro balanceado.</p>
+                    <meta itemprop="serviceType" content="Reparación de artefactos">
                 </div>
-                
-                <div class="service-card">
+				
+				<div class="service-card" itemscope itemtype="https://schema.org/Service">
                     <div class="service-icon">
                         <i class="fas fa-faucet"></i>
                     </div>
-                    <h3>Plomería</h3>
-                    <p>Arreglos y cambios de grifería. Cambios de tanques. Detección de pérdidas en cañerías. Instsalaciones y arreglos en termofusión. Soldaduras en plomo e hidro-bronce.</p>
+                    <h3 itemprop="name">Plomería</h3>
+                    <p itemprop="description">Arreglos y cambios de grifería. Cambios de tanques. Detección de pérdidas en cañerías. Instsalaciones y arreglos en termofusión. Soldaduras en plomo e hidro-bronce.</p>
+                    <meta itemprop="serviceType" content="Plomería">
                 </div>
-
-				 <div class="service-card">
+				
+				<div class="service-card" itemscope itemtype="https://schema.org/Service">
                     <div class="service-icon">
                         <i class="fas fa-snowflake"></i>
                     </div>
-                    <h3>Aire acondicionado</h3>
-                    <p>Instalación y desinstalación de equipos de aire acondicionado.</p>
+                    <h3 itemprop="name">Aire acondicionado</h3>
+                    <p itemprop="description">Instalación y desinstalación de equipos de aire acondicionado.</p>
+                    <meta itemprop="serviceType" content="Aire acondicionado">
                 </div>
-
-				 <div class="service-card">
+				
+				<div class="service-card" itemscope itemtype="https://schema.org/Service">
                     <div class="service-icon">
                         <i class="fas fa-triangle-exclamation"></i>
                     </div>
-                    <h3>Urgencias</h3>
-                    <p>Atendemos urgencias en casos especiales. Contactar presionando el botón de Urgencias.</p>
+                    <h3 itemprop="name">Urgencias</h3>
+                    <p itemprop="description">Atendemos urgencias en casos especiales. Contactar presionando el botón de Urgencias.</p>
+                    <meta itemprop="serviceType" content="Urgencias">
                 </div>
-				
             </div>
         </div>
     </section>
@@ -1596,6 +1602,11 @@
                 <div class="footer-column">
                     <h3>ROSARIO SERVICIOS</h3>
                     <p>Juan Pablo del Río, gasista matriculado.</p>
+					<div style="margin-top: 20px; display: flex; gap: 10px;">
+                        <a href="https://www.facebook.com/people/Rosarioservicios/100063915409598/" target="_blank" aria-label="Facebook de Rosario Servicios" style="color: #1877f2; font-size: 1.5rem;">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                    </div>
                     <div style="margin-top: 20px;">
                         <a href="https://wa.me/5493413133400" class="btn btn-whatsapp" style="padding: 8px 15px; font-size: 0.9rem;">
                             <i class="fab fa-whatsapp"></i> WhatsApp
