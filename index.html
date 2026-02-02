@@ -3,14 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rosario Servicios - Gas y Agua</title>
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🔧</text></svg>">
+    <title>Rosario Servicios - Gas, plomería y aire acondicionado</title>
+    <meta name="description" content="Rosario Servicios. Instalaciones, reparaciones, habilitaciones y urgencias de gas, plomería y aire acondicionado en la ciudad de Rosario y alrededores.">
+    <meta name="keywords" content="Rosario, gasista, plomero, aire acondicionado, urgencia, emergencia">
+	<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🔧</text></svg>">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
-    <style>
-        /* RESET Y ESTILOS GENERALES */
+    <meta property="og:title" content="Rosario Servicios - Gas, plomería y aire acondicionado">
+    <meta property="og:description" content="Instalaciones, reparaciones, habilitaciones y urgencias de gas, plomería y aire acondicionado en la ciudad de Rosario y alrededores.">
+    <meta property="og:image" content="https://www.rosario-servicios.com.ar/isotipo_RS.png">
+    <meta property="og:url" content="https://www.rosario-servicios.com.ar">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="es_AR">
+	<link rel="canonical" href="https://www.rosario-servicios.com.ar">
+	
+	<script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [{
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Inicio",
+            "item": "https://www.rosario-servicios.com.ar"
+        }, {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Instalaciones de gas",
+            "item": "https://www.rosario-servicios.com.ar#servicios"
+        }, {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Plomería",
+            "item": "https://www.rosario-servicios.com.ar#servicios"
+        }, {
+            "@type": "ListItem",
+            "position": 4,
+            "name": "Urgencias",
+            "item": "https://www.rosario-servicios.com.ar#servicios"
+        }, {
+            "@type": "ListItem",
+            "position": 5,
+            "name": "Contacto",
+            "item": "https://www.rosario-servicios.com.ar#ubicacion"
+        }]
+    }
+    </script>
+	
+	<style>
         * {
             margin: 0;
             padding: 0;
@@ -64,23 +106,23 @@
         }
         
         .btn-primary {
-            background-color: #2f95c5; /* Cambiado a azul (#2f95c5) */
+            background-color: #2f95c5; 
             color: white;
         }
         
         .btn-primary:hover {
-            background-color: #267aa3; /* Hover más oscuro */
+            background-color: #267aa3;
             transform: translateY(-2px);
             box-shadow: 0 4px 8px rgba(0,0,0,0.1);
         }
         
         .btn-secondary {
-            background-color: #2f95c5; /* Cambiado a azul (#2f95c5) */
+            background-color: #2f95c5;
             color: white;
         }
         
         .btn-secondary:hover {
-            background-color: #267aa3; /* Hover más oscuro */
+            background-color: #267aa3;
             transform: translateY(-2px);
         }
         
@@ -104,8 +146,7 @@
             70% { box-shadow: 0 0 0 10px rgba(231, 76, 60, 0); }
             100% { box-shadow: 0 0 0 0 rgba(231, 76, 60, 0); }
         }
-        
-        /* HEADER Y NAVEGACIÓN MODIFICADO PARA DOS IMÁGENES PNG */
+
         header {
             background-color: white;
             box-shadow: 0 2px 10px rgba(0,0,0,0.1);
@@ -133,8 +174,7 @@
             height: 100%; /* Ocupa toda la altura del header-container */
             max-width: 400px; /* Ancho máximo para que no se desborde */
         }
-        
-        /* Imagen del logo/icono - PRIMERA IMAGEN PNG */
+
         .logo-image {
             height: 100%; /* Ocupa el 100% de la altura del contenedor logo */
             width: auto;
@@ -143,7 +183,6 @@
             min-height: 40px; /* Tamaño mínimo */
         }
         
-        /* Imagen del nombre de la empresa - SEGUNDA IMAGEN PNG */
         .logo-name-image {
             height: 45%; /* Ocupa el 45% de la altura del contenedor logo */
             width: auto;
@@ -167,7 +206,7 @@
         }
         
         .nav-links a:hover {
-            color: #2f95c5; /* Cambiado a azul (#2f95c5) */
+            color: #2f95c5;
         }
         
         .menu-toggle {
@@ -286,21 +325,19 @@
             display: block;
         }
         
-        /* SECCIÓN DE RESEÑAS MEJORADA Y CORREGIDA - NUEVA POSICIÓN */
         .reviews {
             padding: 80px 0;
             background-color: white;
             position: relative;
         }
         
-        /* Contenedor principal del carrusel - SIMPLIFICADO */
         .reviews-carousel-container {
             position: relative;
             max-width: 1100px;
             margin: 0 auto;
             overflow: hidden;
             padding: 0 80px;
-            touch-action: pan-y pinch-zoom; /* Permitir gestos táctiles */
+            touch-action: pan-y pinch-zoom;
         }
         
         /* Contenedor de las reseñas */
@@ -327,14 +364,12 @@
             z-index: 1;
             height: 320px;
             overflow: hidden;
-            /* Eliminamos el desenfoque por defecto */
             opacity: 1;
             filter: none;
             transform: scale(1);
-            -webkit-tap-highlight-color: transparent; /* Eliminar resaltado en táctil */
+            -webkit-tap-highlight-color: transparent;
         }
-        
-        /* SOLUCIÓN SIMPLIFICADA: Solo la tarjeta activa es visible */
+
         .review-card:not(.active) {
             opacity: 0.6;
             filter: blur(2px);
@@ -362,13 +397,13 @@
             width: 50px;
             height: 50px;
             border-radius: 50%;
-            background-color: #eef7fc; /* Cambiado a tono azul claro */
+            background-color: #eef7fc;
             display: flex;
             align-items: center;
             justify-content: center;
             margin-right: 15px;
             font-size: 1.5rem;
-            color: #2f95c5; /* Cambiado a azul (#2f95c5) */
+            color: #2f95c5;
             overflow: hidden;
             flex-shrink: 0;
         }
@@ -445,7 +480,7 @@
         }
         
         .scroll-indicator i {
-            color: #2f95c5; /* Cambiado a azul (#2f95c5) */
+            color: #2f95c5;
             font-size: 0.8rem;
             margin-bottom: 2px;
         }
@@ -497,10 +532,10 @@
         
         /* CAMBIO IMPORTANTE: Solo azul cuando se presiona */
         .carousel-btn:active {
-            background-color: #2f95c5; /* Cambiado a azul (#2f95c5) */
+            background-color: #2f95c5;
             color: white;
             transform: translateY(-50%) scale(1.1);
-            box-shadow: 0 5px 20px rgba(47, 149, 197, 0.3); /* Cambiado a azul (#2f95c5) */
+            box-shadow: 0 5px 20px rgba(47, 149, 197, 0.3);
         }
         
         .carousel-btn.prev {
@@ -529,7 +564,7 @@
         }
         
         .indicator.active {
-            background-color: #2f95c5; /* Cambiado a azul (#2f95c5) */
+            background-color: #2f95c5;
             transform: scale(1.3);
         }
         
@@ -611,14 +646,14 @@
         .location-icon {
             width: 40px;
             height: 40px;
-            background-color: #eef7fc; /* Cambiado a tono azul claro */
+            background-color: #eef7fc;
             border-radius: 50%;
             display: flex;
             align-items: center;
             justify-content: center;
             margin-right: 15px;
             font-size: 1rem;
-            color: #2f95c5; /* Cambiado a azul (#2f95c5) */
+            color: #2f95c5;
         }
         
         /* SECCIÓN DE CONTACTO */
@@ -646,14 +681,14 @@
         .contact-icon {
             width: 50px;
             height: 50px;
-            background-color: #eef7fc; /* Cambiado a tono azul claro */
+            background-color: #eef7fc;
             border-radius: 50%;
             display: flex;
             align-items: center;
             justify-content: center;
             margin-right: 15px;
             font-size: 1.2rem;
-            color: #2f95c5; /* Cambiado a azul (#2f95c5) */
+            color: #2f95c5;
             flex-shrink: 0;
         }
         
@@ -715,7 +750,7 @@
             bottom: 0;
             width: 40px;
             height: 3px;
-            background-color: #2f95c5; /* Cambiado a azul (#2f95c5) */
+            background-color: #2f95c5;
         }
         
         .footer-links {
@@ -727,7 +762,7 @@
         }
         
         .footer-links a:hover {
-            color: #2f95c5; /* Cambiado a azul (#2f95c5) */
+            color: #2f95c5;
         }
         
         .copyright {
@@ -839,9 +874,7 @@
             .map-container {
                 order: 1;
             }
-            
-            /* SE ELIMINÓ LA REGLA QUE HACÍA DESAPARECER EL BOTÓN DE EMERGENCIA EN MÓVIL */
-            
+                        
             .review-card {
                 min-width: 300px;
                 flex: 0 0 300px;
@@ -881,15 +914,15 @@
             
             .logo {
                 gap: 10px;
-                max-width: 300px; /* Ancho máximo reducido en móvil */
+                max-width: 300px; /* Ancho máximo reducido en celu */
             }
             
             .logo-image {
-                height: 90%; /* Un poco más pequeña en móvil */
+                height: 90%; /* Un poco más pequeña en celu */
             }
             
             .logo-name-image {
-                height: 30%; /* Un poco más pequeña en móvil */
+                height: 30%; /* Un poco más pequeña en celu */
             }
             
             .nav-links {
@@ -936,7 +969,7 @@
             
             .hero {
                 padding: 140px 0 80px;
-                margin-top: 70px; /* Ajustado para la nueva altura del header en móvil */
+                margin-top: 70px; /* Ajustado para la nueva altura del header en celu */
             }
             
             .hero h1 {
@@ -947,7 +980,7 @@
                 height: 350px;
             }
             
-            /* BOTÓN DE EMERGENCIA - MODIFICADO PARA MÓVIL */
+            /* BOTÓN DE EMERGENCIA - MODIFICADO PARA CEL */
             .emergency-button {
                 position: fixed;
                 top: auto;
@@ -964,7 +997,7 @@
                 box-shadow: 0 4px 12px rgba(231, 76, 60, 0.3);
             }
             
-            /* Asegúrate de que no se superponga en pantallas muy pequeñas */
+            /* Para que no se superponga en pantallas muy pequeñas */
             @media (max-height: 600px) {
                 .emergency-button {
                     bottom: 80px;
@@ -979,7 +1012,7 @@
                 font-size: 1.5rem;
             }
             
-            /* Ajustes del carrusel para móvil */
+            /* Ajustes del carrusel para cel */
             .review-card {
                 min-width: 280px;
                 flex: 0 0 280px;
@@ -1085,10 +1118,10 @@
             }
     
             .contact-icon {
-                width: 40px; /* Reducir ligeramente el tamaño en móviles */
+                width: 40px; /* Reducir ligeramente el tamaño en celulares */
                 height: 40px;
                 font-size: 1rem;
-                flex-shrink: 0; /* Asegurar que no se encoja */
+                flex-shrink: 0; /* Asegurar que no se achique */
                 margin-top: 2px; /* Pequeño ajuste de alineación */
             }
     
@@ -1172,14 +1205,10 @@
     </style>
 </head>
 <body>
-    <!-- HEADER MODIFICADO CON DOS IMÁGENES PNG -->
     <header>
         <div class="container header-container">
             <div class="logo">
-                <!-- Reemplaza "logo.png" con la ruta de tu primera imagen PNG (logo/icono) -->
                 <img src="isotipo_RS.png" alt="Logo de la empresa" class="logo-image">
-                
-                <!-- Reemplaza "nombre-empresa.png" con la ruta de tu segunda imagen PNG (nombre) -->
                 <img src="logotipo_RS.png" alt="Nombre de la empresa" class="logo-name-image">
             </div>
             
@@ -1527,24 +1556,6 @@
                 
                 <div class="location-info">
                     <h3>Rosario y alrededores</h3>
-                    
-                    <!--<div class="location-details">
-                        <p>Estamos ubicados en el centro.</p>
-                        <p>Descripción de tu ubicación.</p>
-                        
-                    </div>-->
-
-                    <!--<div class="location-item">
-                        <div class="location-icon">
-                            <i class="fas fa-car"></i>
-                        </div>
-                        <div>
-                            <h4>Estacionamiento</h4>
-                            <p>Disponible en el lugar para clientes</p>
-                        </div>
-                    </div>
-                    -->
-                   
                     <div class="contact-item">
                         <div class="contact-icon">
                             <i class="fas fa-phone-alt"></i>
@@ -1554,17 +1565,6 @@
                             <p>(0341) 153-133400</p>
                         </div>
                     </div>
-                    
-                    <!--<div class="contact-item">
-                        <div class="contact-icon">
-                            <i class="fas fa-map-marker-alt"></i>
-                        </div>
-                        <div>
-                            <h4>Dirección</h4>
-                            <p>Mitre 909, Rosario, Santa Fe</p>
-                        </div>
-                    </div>
-                    -->
                     
                     <div class="contact-item">
                         <div class="contact-icon">
@@ -1585,106 +1585,10 @@
                             <p><a href="https://www.instagram.com/rosario_servicios017/" target="_blank" class="enlace-subrayado">@rosario_servicios017</a></p>
                         </div>
                     </div>
-                   
-                    <!--<a href="https://maps.google.com/?q=Mitre+909,+Rosario,+Argentina" class="btn btn-primary" target="_blank">
-                        <i class="fas fa-directions"></i> Cómo llegar
-                    </a>-->
                 </div>
             </div>
         </div>
     </section>
-
-    <!-- SECCIÓN DE CONTACTO
-    <section class="contact" id="contacto">
-        <div class="container">
-            <div class="section-title">
-                <h2>Contacto</h2>
-                <p>Estamos disponibles para atender tus emergencias y consultas. Contáctanos por cualquier medio.</p>
-            </div>
-            
-            <div class="contact-container">
-                <div class="contact-info">
-                    <h3>Información de Contacto</h3>
-                    
-                    <div class="contact-item">
-                        <div class="contact-icon">
-                            <i class="fas fa-phone-alt"></i>
-                        </div>
-                        <div>
-                            <h4>Teléfono de Emergencia</h4>
-                            <p>+1 (555) 123-4567</p>
-                        </div>
-                    </div>
-                    
-                    <div class="contact-item">
-                        <div class="contact-icon">
-                            <i class="fas fa-envelope"></i>
-                        </div>
-                        <div>
-                            <h4>Correo Electrónico</h4>
-                            <p>emergencias@serviexpress.com</p>
-                        </div>
-                    </div>
-                    
-                    <div class="contact-item">
-                        <div class="contact-icon">
-                            <i class="fas fa-map-marker-alt"></i>
-                        </div>
-                        <div>
-                            <h4>Ubicación</h4>
-                            <p>Calle Principal 123, Ciudad, País</p>
-                        </div>
-                    </div>
-                    
-                    <div class="contact-item">
-                        <div class="contact-icon">
-                            <i class="fas fa-clock"></i>
-                        </div>
-                        <div>
-                            <h4>Horario de Atención</h4>
-                            <p>24 horas, 7 días a la semana</p>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="contact-form">
-                    <h3>Solicitar Servicio</h3>
-                    <form id="contactForm">
-                        <div class="form-group">
-                            <label for="name">Nombre completo *</label>
-                            <input type="text" id="name" class="form-control" required>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="phone">Teléfono *</label>
-                            <input type="tel" id="phone" class="form-control" required>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="service">Tipo de servicio *</label>
-                            <select id="service" class="form-control" required>
-                                <option value="">Seleccione un servicio</option>
-                                <option value="plomeria">Plomería de Emergencia</option>
-                                <option value="electricidad">Urgencias Eléctricas</option>
-                                <option value="gas">Gasista Matriculado</option>
-                                <option value="cerrajeria">Cerrajería Express</option>
-                                <option value="otro">Otro servicio</option>
-                            </select>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="message">Descripción del problema *</label>
-                            <textarea id="message" class="form-control" required placeholder="Describa brevemente el problema..."></textarea>
-                        </div>
-                        
-                        <button type="submit" class="btn btn-primary" style="width: 100%;">Enviar Solicitud</button>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </section>
-    -->
-    
     <!-- FOOTER -->
     <footer>
         <div class="container">
@@ -1704,7 +1608,6 @@
                     <ul class="footer-links">
                         <li><a href="#inicio">Inicio</a></li>
                         <li><a href="#servicios">Servicios</a></li>
-                        <li><a href="#nosotros">Nosotros</a></li>
                         <li><a href="#reseñas">Reseñas</a></li>
                         <li><a href="#ubicacion">Zona de trabajo y contacto</a></li>
                     </ul>
@@ -1713,9 +1616,11 @@
                 <div class="footer-column">
                     <h3>Servicios</h3>
                     <ul class="footer-links">
-                        <li><a href="#servicios">Instalaciones</a></li>
-                        <li><a href="#servicios">Reparaciones</a></li>
-                        <li><a href="#servicios">Habilitaciones</a></li>
+                        <li><a href="#servicios">Instalaciones de gas</a></li>
+                        <li><a href="#servicios">Artefactos</a></li>
+                        <li><a href="#servicios">Plomería</a></li>
+						<li><a href="#servicios">Aire acondicionado</a></li>
+						<li><a href="#servicios">Urgencias</a></li>
                     </ul>
                 </div>
                 
